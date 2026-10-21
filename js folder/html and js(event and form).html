@@ -1,0 +1,48 @@
+
+<!-- m12task event and forms -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Event</title>
+</head>
+<body>
+
+    <button id="myButton">Click Me</button>
+    <p id="status">Waiting for click...</p>
+
+    <script>
+        let button = document.getElementById("myButton");
+        let status = document.getElementById("status");
+
+        button.addEventListener("click", function() {
+            status.textContent = "Button clicked successfully!";
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Count</title>
+</head>
+<body>
+
+    <input type="text" id="message" placeholder="Type something">
+    <p>Character count: <span id="count">0</span></p>
+
+    <script>
+        let message = document.getElementById("message");
+        let count = document.getElementById("count");
+
+        message.addEventListener("input", function() {
+            count.textContent = message.value.length;
+        });
+    </script>
+
+</body>
+</html>
